@@ -9,7 +9,6 @@
   <body>
     <header>
       <h1>Meeting Notes</h1>
-
       <nav>
         <ul>
             <li><a href="#">Contact</a></li>
@@ -58,6 +57,49 @@
             </audio>
             <p>If the meeting audio has wrong content, Contact me!</p>
         </div>
+
+        <details>
+            <summary>Meeting FAQ</summary>
+            <p>Check your email for group project details and review the HTML readings before next class.</p>
+        </details>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Meeting Feedback</legend>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date"><br>
+
+                <input type="radio" id="yes" name="helpful" value="yes">
+                <label for="yes">Helpful</label>
+                <input type="radio" id="no" name="helpful" value="no">
+                <label for="no">Not Helpful</label><br>
+
+                <input type="checkbox" id="html" name="topic" value="html">
+                <label for="html">HTML</label><br>
+
+                <label for="comments">Comments:</label><br>
+                <textarea id="comments" name="comments" rows="3" cols="30"></textarea><br>
+
+                <label for="followup">Follow-up:</label>
+                <input type="text" id="followup" name="followup" list="followup-options">
+                <datalist id="followup-options">
+                    <option value="Email">
+                    <option value="Slack">
+                </datalist><br>
+
+                <label for="role">Role:</label>
+                <select id="role" name="role">
+                    <option value="student">Student</option>
+                    <option value="ta">TA</option>
+                </select><br>
+
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
 
     </main>
     <footer>
