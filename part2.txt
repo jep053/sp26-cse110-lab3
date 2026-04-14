@@ -1,12 +1,13 @@
 Fill in the passphrases here.
 Q1: <!-- Passcode for question 1: WongAvery -->.
 Q2: data-question2="iHateC++".
-Q3 passcode: HTMLRules.
-Q4 Passcode: JavaScriptRocks.
-Q5 Passcode: ShraviBeatsReact.
-Q6 Passcode:
-Q7 Passcode:
-Q8 passcode: coolcoolcool3x */.
-Q9 passcode: 2020_sucked.
-Q11: <meta name="question11" content="ElaineFirst">.
-Q12: data-question12passcode="iHeartWebDev".
+Q3: HTMLRules.
+Q4: JavaScriptRocks.
+Q5: ShraviBeatsReact.
+Q6: ThisIsJSyay
+Q7: SofiaWasHere
+Q8: coolcoolcool3x */.
+Q9: 2020_sucked.
+Q10: listenToPedalcore
+Q11: "ElaineFirst"
+Q12: "iHeartWebDev"
