@@ -1,8 +1,8 @@
 ---
-name: agile
+name: Create standup.md template
 about: Create a standup notes template in a Markdown file
 title: ''
-labels: ''
+labels: agile
 assignees: jep053
 
 ---
