@@ -1,6 +1,6 @@
 /* Main stylesheet for Lab 3 */
 
-/* CSS Variable with fallback */
+
 :root {
     --main-color: #3498db;
     --font-size-base: 1rem;
@@ -49,5 +49,66 @@ main {
     
     h1 {
         font-size: 1.5rem;
+    }
+}
+
+h1 {
+    color: rgb(52, 152, 219);
+}
+
+.flex-item {
+    padding: 10px;
+}
+
+#name {
+    border: 1px solid #3498db;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=text] {
+    padding: 5px;
+}
+
+a:hover {
+    color: red;
+}
+
+h1, h2, h3 {
+    font-family: 'Noto Sans Ol Chiki', sans-serif;
+}
+
+main p {
+    line-height: 1.6;
+}
+
+header > nav {
+    background-color: hsl(210, 50%, 90%);
+}
+
+h2 ~ p {
+    color: #555;
+}
+
+h2 + p {
+    font-weight: bold;
+}
+
+li.flex-item {
+    list-style: none;
+}
+
+form:has(input[type=text]) {
+    border: 2px solid var(--main-color, #3498db);
+    padding: 10px;
+}
+
+nav {
+    background-color: #f0f0f0;
+
+    ul {
+        margin: 0;
     }
 }
