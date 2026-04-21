@@ -3,58 +3,57 @@
   <head>
     <title>Meeting Notes</title>
     <meta charset="UTF-8">
-    <meta name="author" content="Jeong">
+    <meta name="author" content="Jeong Min">
     <link rel="icon" href="https://www.svgrepo.com/show/384662/file-infomation-meeting-note-paper.svg" type="image/x-icon">
     
-    <!-- Lab3: start -->
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ol+Chiki:wght@400..700&display=swap" rel="stylesheet">
+    
     <style>
       h1 {
           text-align: center;
+          text-transform: uppercase;
+      }
+      .internal-test {
+          background-color: rgba(0,0,0,0.05);
+          padding: 10px;
       }
     </style>
   </head>
   <body>
     <header>
-      <h1>Meeting Notes</h1>
-      <nav>
+      <h1 id="name">Meeting Notes</h1> <nav>
         <ul>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Notes</a></li>
+            <li class="flex-item"><a href="#">Contact</a></li>
+            <li class="flex-item"><a href="#">Notes</a></li>
         </ul>
       </nav>
     </header>
-    <main>
-        <section>
+
+    <main class="grid-container"> <section class="internal-test">
             <h2>Meeting Summary</h2>
             <p>In our recent meeting, we discussed the HTML, so we could get base knowledge for our CSE110 Project.</p> 
+            <p style="color: orange; font-weight: bold;">Note: This is an inline style example.</p>
         </section>
-        <h2> Meeting Details</h2>
-        <div>
-            <img src="https://www.shutterstock.com/image-vector/color-megaphone-icon-word-meeting-260nw-2598831337.jpg" alt="Meeting Minutes" width="340" height="200">
-            <h3>Notes </h3>
-            <p>Here are the notes from our recent meeting:</p>
-            <strong>Important detail</strong>: this lab is due <b>April/04/2026</b>.
-            <ul>
-                <li><strong>Important detail</strong>: this lab is due <b>April/04/2026</b>.</li>
-                <li>Discussed what is HTML, with documents and youtube video <i>HTML Tutorial</i>, 
-                    <br>You can find the video here:<br>
-                    <video width="320" height="240" controls>
-                        <source src="https://youtu.be/pMJ0NI3OkYA?si=f029FxPnw5hM97sI" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </li>
-                <li>Assigned a group project: Check your email for details.</li>
-                <li>Reviewed what tags we should know.</li>
-                <li>Use <span style="font-weight: bold"><em>W3C's HTML validator</em></span> to check HTML is valid.
-                    <br>Go here to check: <a href="https://validator.w3.org/">W3C's HTML validator</a>
-                </li>
-            </ul>
-        </div>
-        <div>
+
+        <section>
+            <h2> Meeting Details</h2>
+            <div>
+                <img src="https://www.shutterstock.com/image-vector/color-megaphone-icon-word-meeting-260nw-2598831337.jpg" alt="Meeting Minutes">
+                <h3>Notes</h3>
+                <p>Here are the notes from our recent meeting:</p>
+                <strong>Important detail</strong>: this lab is due <b>April/04/2026</b>.
+                <ul>
+                    <li>Discussed HTML structure with tutorials.</li>
+                    <li>Assigned a group project: Check your email for details.</li>
+                    <li>Use <span><em>W3C's HTML validator</em></span> to check validity.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
             <h3>Timeline</h3>
             <ol>
                 <li>Introducing the basic structure of an HTML document.</li>
@@ -66,58 +65,29 @@
                 <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
-            <p>If the meeting audio has wrong content, Contact me!</p>
-        </div>
+        </section>
 
-        <details>
-            <summary>Meeting FAQ</summary>
-            <p>Check your email for group project details and review the HTML readings before next class.</p>
-        </details>
+        <section>
+            <details>
+                <summary>Meeting FAQ</summary>
+                <p>Check your email for group project details and review the HTML readings.</p>
+            </details>
 
-        <form action="#" method="post">
-            <fieldset>
-                <legend>Meeting Feedback</legend>
-
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name"><br>
-
-                <label for="date">Date:</label>
-                <input type="date" id="date" name="date"><br>
-
-                <input type="radio" id="yes" name="helpful" value="yes">
-                <label for="yes">Helpful</label>
-                <input type="radio" id="no" name="helpful" value="no">
-                <label for="no">Not Helpful</label><br>
-
-                <input type="checkbox" id="html" name="topic" value="html">
-                <label for="html">HTML</label><br>
-
-                <label for="comments">Comments:</label><br>
-                <textarea id="comments" name="comments" rows="3" cols="30"></textarea><br>
-
-                <label for="followup">Follow-up:</label>
-                <input type="text" id="followup" name="followup" list="followup-options">
-                <datalist id="followup-options">
-                    <option value="Email">
-                    <option value="Slack">
-                </datalist><br>
-
-                <label for="role">Role:</label>
-                <select id="role" name="role">
-                    <option value="student">Student</option>
-                    <option value="ta">TA</option>
-                </select><br>
-
-                <button type="submit">Submit</button>
-            </fieldset>
-        </form>
-
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Meeting Feedback</legend>
+                    <label for="name-input">Name:</label>
+                    <input type="text" id="name-input" name="name"><br>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
     </main>
+
     <footer>
         <hr>
         <p>Contact(email): jep053@ucsd.edu</p>
         <p>© Spring2026/CSE110 Meeting Notes. All rights reserved.</p>
-        <footer style="font-size: 0.9em;">
     </footer>
   </body>
 </html>
