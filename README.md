@@ -1,3 +1,3 @@
 # Lab 3 - CSS and Agile Intro
 
-GitHub Pages URL: https://jep053.github.io/sp26-cse110-lab3/
+Lab 3 URL: https://jep053.github.io/sp26-cse110-lab3/
