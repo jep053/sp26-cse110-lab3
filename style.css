@@ -1,0 +1,14 @@
+/* Main stylesheet for Lab 3 */
+
+/* CSS Variable with fallback */
+:root {
+    --main-color: #3498db;
+    --font-size-base: 1rem;
+}
+
+body {
+    color: var(--main-color, #3498db);
+    font-size: var(--font-size-base, 16px);
+    margin: 0;
+    padding: 0;
+}
