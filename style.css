@@ -14,16 +14,12 @@ body {
     padding: 0;
 }
 
-/* Flexbox Layout */
-.flex-container {
+nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
-}
-
-.flex-item {
-    flex: 1;
-    padding: 10px;
+    list-style: none;
+    padding: 0;
 }
