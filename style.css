@@ -13,3 +13,17 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/* Flexbox Layout */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.flex-item {
+    flex: 1;
+    padding: 10px;
+}
